@@ -1,9 +1,9 @@
 @use 'layout/header';
 @use 'layout/navigation';
-
+@use 'src/css/abstract/_variables.scss';
 
 body
 {
     margin: 0;
-    background-color: rgb(168, 135, 44);
+    background-color: variables.$backgrund_color;;
 }
