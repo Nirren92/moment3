@@ -1,0 +1,92 @@
+@use 'src/css/abstract/_variables.scss';
+
+@import 'src/css/components/_mediaqueries.scss';
+
+
+    nav
+    {
+
+        width: 100%;
+
+        ul{
+
+            list-style: none;
+            margin: 0px;
+            padding: 0; 
+            display: flex;
+           align-items: center;
+           
+            
+            // gör om till menuknapp
+            @include respond_to('small'){
+                display: none;
+                z-index: 1;
+                position: absolute;
+                top:100px;
+                width: 100%;
+                
+            }
+
+            li
+            {
+                display: inline-block;
+                
+                // gör om till menuknapp
+                @include respond_to('small'){
+                    display: block;
+                    
+                }
+            }
+
+            a
+            {
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                
+                color: variables.$text_color;
+                background-color: variables.$second_color;
+            
+                &:hover
+                {
+                    background-color: variables.$object_hover_color;
+                }
+            }
+            
+
+            .home_img 
+            {
+                width: 12%;
+                padding: 2%;
+                
+            }
+            
+       
+        
+            
+
+
+        }
+    
+    
+        .nav_button{
+        
+        float: right;
+        margin-top: 2%;
+        margin-right: 2%;
+
+        display: none;
+
+        @include respond_to('small'){
+        display: unset;
+        }
+
+        img {
+            height: 50px;
+         
+          }
+        
+        }
+    }
+    
+    
