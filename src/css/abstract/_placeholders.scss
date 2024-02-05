@@ -74,7 +74,25 @@
             }
         }
       
+       
 
     }
 
+}
+
+
+
+.ruta_bilder_text
+{
+    @extend .container_ruta; 
+
+
+    
+    p
+    {
+        width: 80%;
+        margin: auto;
+        margin-top: 5%;
+        font-size: 2vw;
+    }
 }
