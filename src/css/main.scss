@@ -1,6 +1,8 @@
+@use 'src/css/abstract/_variables.scss';
 @use 'layout/header';
 @use 'layout/navigation';
-@use 'src/css/abstract/_variables.scss';
+@use 'abstract/_placeholders';
+
 
 body
 {

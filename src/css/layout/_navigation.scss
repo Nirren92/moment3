@@ -37,6 +37,7 @@
                 height: 100%;
                 width: 200px;
                 height: 100px;
+
                 // gör om till menuknapp
                 @include respond_to('small'){
                     display: block;
@@ -49,9 +50,11 @@
             a
             {
                 text-decoration: none;
+                
                 display: flex;
                 align-items: center;
                 justify-content: center;
+
                 height: 100%;
                 color: variables.$text_color;
                 
@@ -93,10 +96,10 @@
         display: unset;
         }
 
-        img {
-            height: 50px;
-         
-          }
+            img {
+                height: 50px;
+            
+            }
         
         }
     }
