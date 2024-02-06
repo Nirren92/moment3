@@ -3,7 +3,11 @@
 @import 'src/css/components/_mediaqueries.scss';
 @import 'src/css/abstract/_mixins.scss';
 
-
+body
+{
+    margin: 0;
+    background-color: variables.$backgrund_color;;
+}
 
 .container_ruta
 {
@@ -95,6 +99,11 @@
 
     }
 
+ 
+
+
+
+
 }
 
 
@@ -144,4 +153,36 @@
         padding-left: 20%;
     }
 
+
+
 }
+
+
+@media
+(prefers-color-scheme: light)
+{
+
+    .container_ruta
+        {
+
+            background-color: variables.$second_color-lightm;
+        
+            h1
+            {
+                background-color: variables.$primar_color-lightm;
+                color: variables.$headings_color-lightm;
+    
+            }
+       
+        
+        }
+
+
+        body
+        {
+            
+            background-color: variables.$backgrund_color-lightm;
+        }
+}
+
+

@@ -57,13 +57,14 @@
 
                 height: 100%;
                 color: variables.$text_color;
-                
+                font-size: 30px;
+                font-weight: bold;
                 width: 100%;
 
                 
                 &:hover
                 {
-                    background-color: variables.$object_hover_color;
+                    background-color: variables.$object_hover_color-lightm;
                 }
             }
             
@@ -105,3 +106,49 @@
     }
     
     
+    @media
+    (prefers-color-scheme: light)
+    {
+
+        nav
+        {
+
+            
+    
+            ul{
+
+                
+                // gör om till menuknapp
+                @include respond_to('small'){
+
+                    
+                    background-color: variables.$second_color-lightm;
+                  
+                }
+    
+               
+    
+                a
+                {
+                
+                    color: variables.$text_color-lightm;
+                    
+                
+                    &:hover
+                    {
+                        background-color: variables.$object_hover_color-lightm;
+                    }
+                }
+                
+    
+                
+            
+                
+    
+    
+            }
+        
+        
+            
+        }
+    }
