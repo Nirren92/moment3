@@ -186,3 +186,39 @@ body
 }
 
 
+
+.ruta_bilder_text_animering
+{
+    @extend .container_ruta; 
+    height: 600px;
+        
+    .img_container
+    {
+        
+        
+
+        .img_object
+        {
+            
+            
+            img
+            {
+                transition: transform 0.5s ease-in;
+                
+                &:hover
+                {
+                    transform: scale(110%);
+                }
+
+
+            }
+        }
+      
+       
+
+    }
+
+
+
+
+}
