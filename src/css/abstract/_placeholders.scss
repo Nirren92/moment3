@@ -192,6 +192,12 @@ body
     @extend .container_ruta; 
     height: 600px;
         
+
+    h1
+    {
+        animation: text_glow 3s ease-in-out infinite ;
+    }
+
     .img_container
     {
         
