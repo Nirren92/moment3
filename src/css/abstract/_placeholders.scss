@@ -228,3 +228,26 @@ body
 
 
 }
+
+
+
+
+
+
+
+
+.ruta_bilder_text
+{
+    @extend .container_ruta; 
+    
+    .chart
+    {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+}

@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.scss"> 
     <script  src="js/javascriptheader.js" type="module" ></script>
+    <script  src="js/diagram.js" type="module" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <title>Document</title>
 </head>
 <body>
@@ -38,26 +41,24 @@
 
     <main>
 
-        <section class="container_ruta">
+        <section class="ruta_bilder_text">
 
             
                 <h1>Start sida</h1>
-                <div class="img_container">
+                <div class="chart">
               
-                          
-                    <picture class="img_object">
-                        <source srcset="img/bild11.jpg?as=webp&width=400" type="image/webp" />
-                        <img src="img/bild11.jpg" alt="exempelbild" />
-                    </picture>
+                    <canvas id="most_apply_course">
 
-                    <picture class="img_object">
-                        <source srcset="img/bild22.jpg?as=webp&width=400" type="image/webp" />
-                        <img src="img/bild22.jpg" alt="exempelbild" />
-                    </picture>
-
+                    </canvas>
+              
                 </div>
+                <div class="chart">
+              
+                    <canvas id="most_apply_program">
 
-
+                    </canvas>
+              
+                </div>
 
        
 
