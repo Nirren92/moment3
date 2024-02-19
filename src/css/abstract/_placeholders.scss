@@ -236,18 +236,26 @@ body
 
 
 
-.ruta_bilder_text
+.ruta_bilder_text_chart
 {
-    @extend .container_ruta; 
+    @extend .ruta_bilder_text; 
     
     .chart
     {
         width: 90%;
-        margin: auto;
+        margin: 0 auto;
         display: flex;
         align-items: center;
         justify-content: center;
+        max-height: 600px;
+       
     }
     
+    h2{
+        text-align: center;
+        padding: 20px;
+    }
+
+   
 
 }
