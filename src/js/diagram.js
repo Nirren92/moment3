@@ -101,7 +101,7 @@ function format_labels(input_array, size_string)
     return array_name;
 }
 
-
+// denna funktion ritar charts beroende på inputdata och 
 function chart_draw(input_array,filterord,canvasid,label_name,charttype)
 {
 
@@ -126,7 +126,7 @@ function chart_draw(input_array,filterord,canvasid,label_name,charttype)
                         color:'black', 
                         
                         font: {
-                            size: 15
+                            size: 8
                             
                         }
                     }
@@ -170,14 +170,18 @@ function chart_draw(input_array,filterord,canvasid,label_name,charttype)
 
             plugins: {
                 legend: {
+                    position: 'left',
                     labels: {
                         color:'black', 
                         font: {
-                            size:10
+                            size:12
                         }
                     }
                 }
-            }
+            },
+            legend: {
+               
+        }
         };
 
     }
