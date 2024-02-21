@@ -9,20 +9,6 @@ var antagningsdata=null;
 window.onload =init_data();
 
 
-window.addEventListener('beforeprint', () => {
-    myChart.resize(600, 600);
-  });
-  window.addEventListener('afterprint', () => {
-    myChart.resize();
-  });
-   
-
-
-  function beforePrintHandler () {
-    for (let id in Chart.instances) {
-        Chart.instances[id].resize();
-    }
-}
  
  
 async function init_data()
