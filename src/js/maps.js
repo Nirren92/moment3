@@ -25,7 +25,7 @@ async function init_map()
 
     try
     {
-        url_sok = "https://nominatim.openstreetmap.org/search?q="+"Ludvika"+"&format=geojson";
+        var url_sok = "https://nominatim.openstreetmap.org/search?q="+"Ludvika"+"&format=geojson";
 
         var gps_kord= await get_data(url_sok);
 
@@ -68,7 +68,7 @@ async function search_dest()
     
         console.log("dest",dest);
 
-        url_sok = "https://nominatim.openstreetmap.org/search?q="+dest+"&format=geojson";
+        var url_sok = "https://nominatim.openstreetmap.org/search?q="+dest+"&format=geojson";
 
 
         var gps_kord= await get_data(url_sok);
