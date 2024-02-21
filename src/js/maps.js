@@ -10,6 +10,7 @@ const data_lank = "https://nominatim.openstreetmap.org/search?q";
 
 
 var dest_seach = document.getElementById('sok_destination');
+
 dest_seach.addEventListener('click', search_dest);
 
 
@@ -61,11 +62,12 @@ async function search_dest()
     {
 
         var inputdata = document.getElementById('position_input');
-        dest = inputdata.value;
-        dest = dest.split(" ");
+        var dest = inputdata.value;
+        
 
-        dest = dest.join("+");
-    
+        //förbereder sökorden för API
+        dest.replaace(" ","+")
+
         console.log("dest",dest);
 
         var url_sok = "https://nominatim.openstreetmap.org/search?q="+dest+"&format=geojson";
