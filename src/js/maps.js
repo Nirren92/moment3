@@ -62,11 +62,12 @@ async function search_dest()
     {
 
         var inputdata = document.getElementById('position_input');
+        
         var dest = inputdata.value;
         
 
         //förbereder sökorden för API
-        dest.replaace(" ","+")
+        dest.replace(" ","+")
 
         console.log("dest",dest);
 
